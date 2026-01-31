@@ -63,6 +63,9 @@ async def create_order(order: dict):
     except httpx.HTTPError as e:
         raise HTTPException(status_code=503, detail=f"Orders service unavailable: {str(e)}")
 
+
+
+
 # === МАРШРУТЫ ДЛЯ КЛИЕНТОВ ===
 
 @app.get("/customers")
